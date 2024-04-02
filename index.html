@@ -8,7 +8,7 @@
 
         function connect() {
             var token = document.getElementById("token").value;
-            websocket = new WebSocket("ws://127.0.0.1:8001/ws/" + token);
+            websocket = new WebSocket("ws://127.0.0.1:8000/ws/" + token);
 
             websocket.onmessage = function(event) {
                 var messages = document.getElementById("messages");
